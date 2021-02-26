@@ -12,7 +12,7 @@
 
 </head>
 
-<header class="container pt-3 pb-3 header">
+    <header class="container pt-3 pb-3 header">
         <div>
             <h2 class="text-center text-azul">
                 Super digital
@@ -24,32 +24,49 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2> Inicia Secion o Registrate</h2>
+                <h2> Registrate</h2>
             </div>
             <div class="card-body ">
                 <form action="index.php" >
 
-                    <div class="form-group row">
+                    <div class="form-group row mt-2">
+                        <label for="correo" class="col-sm-3 col-form-label"> <h4>Nombre(s):</h4></label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control"  name="Nombre"  required>
+                            </div>	
+                    </div>
+
+                    <div class="form-group row mt-2">
+                        <label for="correo" class="col-sm-3 col-form-label"> <h4>Apellido Paterno</h4></label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control"  name="Apaterno" required>
+                            </div>	
+                    </div>
+
+                    <div class="form-group row mt-2">
+                        <label for="correo" class="col-sm-3 col-form-label"> <h4>Apellido Materno</h4></label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control"  name="Amaterno" required>
+                            </div>	
+                    </div>
+
+                    <div class="form-group row mt-2">
                         <label for="correo" class="col-sm-3 col-form-label"> <h4>Correo electronico:</h4></label>
                             <div class="col-sm-6">
-                                <input type="email" class="form-control" id="correo" name="TxtEMail" placeholder="Ejemplo:micorreo@dominio.com" required>
+                                <input type="email" class="form-control"  name="TxtEMail" placeholder="Ejemplo:micorreo@dominio.com" required>
                             </div>	
                     </div>
 
                     <div class="form-group row mt-2">
                         <label for="correo" class="col-sm-3 col-form-label"> <h4>Escriba su Contraseña:</h4></label>
                             <div class="col-sm-6">
-                                <input type="password" class="form-control" id="correo" name="password" required>
+                                <input type="password" class="form-control"  name="password" required>
                             </div>	
                     </div>
 
                     <div class="mt-3 d-flex justify-content-center ">
                         <button type="submit" class="btn btn-primary btn-lg btn-block col-12">Aceptar</button>
                         
-                    </div>
-
-                    <div class="mt-1 d-flex justify-content-center">
-                        <a href="registro.php" class="btn btn-primary btn-lg btn-block col-12">Registrarse</a>
                     </div>
 
                 </form>
